@@ -26,7 +26,7 @@ public class Factory implements EntityFactory {
 
         return FXGL.entityBuilder(data)
                 .view(texture)
-                .with(new ProjectileComponent(new Point2D(0, 1), 500))
+                .with(new ProjectileComponent(new Point2D(-1, 0), 500))
                 .build();
     }
 }
