@@ -14,8 +14,10 @@ import javafx.scene.paint.Color;
 public class Factory implements EntityFactory {
     @Spawns("enemy")
     public Entity newEnemy(SpawnData data) {
+        Texture texture = FXGL.texture("arrow.png").multiplyColor(Color.RED);
+
         return FXGL.entityBuilder(data)
-                .view("arrow.png")
+                .view(texture)
                 .with(new ProjectileComponent(new Point2D(1, 0), 150))
                 .build();
     }
