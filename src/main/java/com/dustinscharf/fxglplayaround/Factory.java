@@ -1,5 +1,6 @@
 package com.dustinscharf.fxglplayaround;
 
+import com.almasb.fxgl.core.math.FXGLMath;
 import com.almasb.fxgl.dsl.FXGL;
 import com.almasb.fxgl.dsl.components.ProjectileComponent;
 import com.almasb.fxgl.entity.Entity;
@@ -18,7 +19,7 @@ public class Factory implements EntityFactory {
 
         return FXGL.entityBuilder(data)
                 .view(texture)
-                .with(new ProjectileComponent(new Point2D(1, 0), 150))
+                .with(new ProjectileComponent(new Point2D(1, 0), FXGLMath.random(100, 200)))
                 .build();
     }
 
@@ -28,7 +29,7 @@ public class Factory implements EntityFactory {
 
         return FXGL.entityBuilder(data)
                 .view(texture)
-                .with(new ProjectileComponent(new Point2D(-1, 0), 500))
+                .with(new ProjectileComponent(new Point2D(-1, 0), FXGLMath.random(100, 200)))
                 .build();
     }
 }
