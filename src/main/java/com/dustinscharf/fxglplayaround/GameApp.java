@@ -14,6 +14,7 @@ public class GameApp extends GameApplication {
     protected void initGame() {
         FXGL.getGameWorld().addEntityFactory(new Factory());
         FXGL.spawn("enemy", 100, 100);
+        FXGL.spawn("ally", 600, 100);
     }
 
     public static void main(String[] args) {
