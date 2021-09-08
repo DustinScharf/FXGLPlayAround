@@ -5,6 +5,7 @@ import com.almasb.fxgl.app.GameSettings;
 import com.almasb.fxgl.core.math.FXGLMath;
 import com.almasb.fxgl.dsl.FXGL;
 import javafx.geometry.Rectangle2D;
+import javafx.scene.input.KeyCode;
 import javafx.util.Duration;
 
 import static com.almasb.fxgl.dsl.FXGL.*;
@@ -13,6 +14,13 @@ public class GameApp extends GameApplication {
     @Override
     protected void initSettings(GameSettings gameSettings) {
         // empty
+    }
+
+    @Override
+    protected void initInput() {
+        onKeyDown(KeyCode.F, () -> {
+            System.out.println("hi world");
+        });
     }
 
     @Override
