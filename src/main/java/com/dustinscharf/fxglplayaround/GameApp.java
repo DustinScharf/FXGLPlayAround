@@ -19,7 +19,7 @@ public class GameApp extends GameApplication {
     @Override
     protected void initInput() {
         onKeyDown(KeyCode.F, () -> {
-            System.out.println("hi world");
+            getNotificationService().pushNotification("Hello world!");
         });
     }
 
