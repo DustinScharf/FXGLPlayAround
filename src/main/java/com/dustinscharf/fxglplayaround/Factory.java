@@ -32,4 +32,13 @@ public class Factory implements EntityFactory {
                 .with(new ProjectileComponent(new Point2D(-1, FXGLMath.random(-1, 1)), FXGLMath.random(100, 500)))
                 .build();
     }
+
+    @Spawns("dude")
+    public Entity newDude(SpawnData data) {
+        Texture texture = FXGL.texture("arrow.png").multiplyColor(Color.VIOLET);
+
+        return FXGL.entityBuilder(data)
+                .view(texture)
+                .build();
+    }
 }
