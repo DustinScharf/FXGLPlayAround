@@ -15,7 +15,7 @@ import javafx.scene.paint.Color;
 public class Factory implements EntityFactory {
     @Spawns("enemy")
     public Entity newEnemy(SpawnData data) {
-        Texture texture = FXGL.texture("arrow.png").multiplyColor(Color.RED);
+        Texture texture = FXGL.texture("arrow.png").toColor(Color.RED);
 
         return FXGL.entityBuilder(data)
                 .view(texture)
@@ -25,7 +25,7 @@ public class Factory implements EntityFactory {
 
     @Spawns("ally")
     public Entity newAlly(SpawnData data) {
-        Texture texture = FXGL.texture("arrow.png").multiplyColor(Color.GREEN);
+        Texture texture = FXGL.texture("arrow.png").toColor(Color.GREEN);
 
         return FXGL.entityBuilder(data)
                 .view(texture)
@@ -35,7 +35,7 @@ public class Factory implements EntityFactory {
 
     @Spawns("dude")
     public Entity newDude(SpawnData data) {
-        Texture texture = FXGL.texture("arrow.png").multiplyColor(Color.VIOLET);
+        Texture texture = FXGL.texture("arrow.png").toColor(Color.VIOLET);
 
         return FXGL.entityBuilder(data)
                 .view(texture)
