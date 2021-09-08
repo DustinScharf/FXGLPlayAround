@@ -39,6 +39,7 @@ public class Factory implements EntityFactory {
 
         return FXGL.entityBuilder(data)
                 .view(texture)
+                .rotate(-90)
                 .build();
     }
 }
