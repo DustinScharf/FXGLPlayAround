@@ -18,9 +18,7 @@ public class GameApp extends GameApplication {
 
     @Override
     protected void initInput() {
-        onKeyDown(KeyCode.F, () -> {
-            getNotificationService().pushNotification("Hello world!");
-        });
+        onKeyDown(KeyCode.F, () -> getNotificationService().pushNotification("Hello world!"));
     }
 
     @Override
