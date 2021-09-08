@@ -33,7 +33,7 @@ public class GameApp extends GameApplication {
             spawn("ally",
                     FXGLMath.randomPoint(new Rectangle2D(0, 0, getAppWidth(), getAppHeight()))
             );
-        }, Duration.seconds(1));
+        }, Duration.seconds(0.1));
     }
 
     public static void main(String[] args) {
