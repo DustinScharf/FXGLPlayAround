@@ -21,6 +21,7 @@ public class GameApp extends GameApplication {
 
         run(() -> {
             if (FXGLMath.random(0, 5) == 0) {
+                // todo disappear after few seconds
                 spawn("dude",
                         FXGLMath.randomPoint(new Rectangle2D(0, 0, getAppWidth(), getAppHeight()))
                 );
