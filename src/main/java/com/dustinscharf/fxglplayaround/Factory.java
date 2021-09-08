@@ -39,7 +39,7 @@ public class Factory implements EntityFactory {
 
         return FXGL.entityBuilder(data)
                 .view(texture)
-                .opacity(50)
+                .opacity(0.5)
                 .rotate(-90)
                 .build();
     }
