@@ -19,6 +19,10 @@ public class GameApp extends GameApplication {
     protected void initGame() {
         getGameWorld().addEntityFactory(new Factory());
 
+        spawn("dude",
+                FXGLMath.randomPoint(new Rectangle2D(0, 0, getAppWidth(), getAppHeight()))
+        );
+
         run(() -> {
             spawn("enemy",
                     FXGLMath.randomPoint(new Rectangle2D(0, 0, getAppWidth(), getAppHeight()))
