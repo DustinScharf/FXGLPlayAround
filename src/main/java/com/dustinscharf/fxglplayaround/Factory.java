@@ -43,4 +43,6 @@ public class Factory implements EntityFactory {
                 .rotate(-90)
                 .build();
     }
+
+    // TODO make a full player controlled entity
 }
