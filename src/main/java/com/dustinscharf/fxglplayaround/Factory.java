@@ -12,6 +12,9 @@ import javafx.geometry.Point2D;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.paint.Color;
 
+/**
+ * Creates all entity objects
+ */
 public class Factory implements EntityFactory {
     @Spawns("enemy")
     public Entity newEnemy(SpawnData data) {
