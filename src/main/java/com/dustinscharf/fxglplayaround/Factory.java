@@ -16,6 +16,12 @@ import javafx.scene.paint.Color;
  * Creates all entity objects
  */
 public class Factory implements EntityFactory {
+    /**
+     * Creates a new enemy
+     *
+     * @param data data for the entity to spawn
+     * @return the entity to spawn
+     */
     @Spawns("enemy")
     public Entity newEnemy(SpawnData data) {
         Texture texture = FXGL.texture("arrow.png").toColor(Color.RED);
@@ -26,6 +32,12 @@ public class Factory implements EntityFactory {
                 .build();
     }
 
+    /**
+     * Creates a new ally
+     *
+     * @param data data for the entity to spawn
+     * @return the entity to spawn
+     */
     @Spawns("ally")
     public Entity newAlly(SpawnData data) {
         Texture texture = FXGL.texture("arrow.png").toColor(Color.GREEN);
