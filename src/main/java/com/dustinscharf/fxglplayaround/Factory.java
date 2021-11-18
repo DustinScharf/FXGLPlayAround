@@ -26,6 +26,7 @@ public class Factory implements EntityFactory {
     public Entity newEnemy(SpawnData data) {
         Texture texture = FXGL.texture("arrow.png").toColor(Color.RED);
 
+        // ProjectileComponent means a moving component
         return FXGL.entityBuilder(data)
                 .view(texture)
                 .with(new ProjectileComponent(new Point2D(1, FXGLMath.random(-1, 1)), FXGLMath.random(100, 500)))
