@@ -48,6 +48,12 @@ public class Factory implements EntityFactory {
                 .build();
     }
 
+    /**
+     * Creates a new dude
+     *
+     * @param data data for the entity to spawn
+     * @return the entity to spawn
+     */
     @Spawns("dude")
     public Entity newDude(SpawnData data) {
         Texture texture = FXGL.texture("arrow.png").toColor(Color.VIOLET);
