@@ -67,4 +67,14 @@ public class Factory implements EntityFactory {
     }
 
     // TODO make a full player controlled entity
+    @Spawns("player")
+    public Entity newPlayer(SpawnData data) {
+        Texture texture = FXGL.texture("arrow.png").toColor(Color.VIOLET);
+
+        return FXGL.entityBuilder(data)
+                .view(texture)
+                .opacity(0.5)
+                .rotate(-90)
+                .build();
+    }
 }
