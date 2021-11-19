@@ -71,6 +71,8 @@ public class Factory implements EntityFactory {
     public Entity newPlayer(SpawnData data) {
         Texture texture = FXGL.texture("arrow.png").toColor(Color.VIOLET);
 
+        // TODO make controllable
+
         return FXGL.entityBuilder(data)
                 .view(texture)
                 .opacity(0.5)
