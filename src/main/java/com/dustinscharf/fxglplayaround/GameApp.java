@@ -28,6 +28,7 @@ public class GameApp extends GameApplication {
 
     @Override
     protected void initGame() {
+        // sets the entity factory for the one and only game world
         getGameWorld().addEntityFactory(new Factory());
 
         // run starts a thread in the bbackground to not let the gui hang between frames
