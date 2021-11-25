@@ -16,6 +16,11 @@ import static com.almasb.fxgl.dsl.FXGL.run;
 import static com.almasb.fxgl.dsl.FXGL.spawn;
 
 public class GameApp extends GameApplication {
+    /**
+     * Initilizes the game settings
+     *
+     * @param gameSettings the game settings
+     */
     @Override
     protected void initSettings(GameSettings gameSettings) {
         // empty
