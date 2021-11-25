@@ -16,8 +16,9 @@ import static com.almasb.fxgl.dsl.FXGL.run;
 import static com.almasb.fxgl.dsl.FXGL.spawn;
 
 public class GameApp extends GameApplication {
+
     /**
-     * Initilizes the game settings
+     * Initializes the game settings
      *
      * @param gameSettings the game settings
      */
@@ -27,7 +28,7 @@ public class GameApp extends GameApplication {
     }
 
     /**
-     * Initilizes the input keys
+     * Initializes the input keys
      */
     @Override
     protected void initInput() {
