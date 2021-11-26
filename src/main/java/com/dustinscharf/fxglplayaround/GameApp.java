@@ -56,7 +56,7 @@ public class GameApp extends GameApplication {
             spawn("ally",
                     FXGLMath.randomPoint(new Rectangle2D(0, 0, getAppWidth(), getAppHeight()))
             );
-        }, Duration.seconds(0.05));
+        }, Duration.seconds(0.05)); // the run thread loops itself
     }
 
     public static void main(String[] args) {
