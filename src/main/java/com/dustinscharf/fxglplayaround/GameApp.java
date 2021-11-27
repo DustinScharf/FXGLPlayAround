@@ -59,6 +59,11 @@ public class GameApp extends GameApplication {
         }, Duration.seconds(0.05)); // the run thread loops itself
     }
 
+    /**
+     * Entry point
+     *
+     * @param args launch arguments
+     */
     public static void main(String[] args) {
         launch(args);
     }
