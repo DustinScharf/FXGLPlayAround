@@ -40,7 +40,7 @@ public class GameApp extends GameApplication {
         // sets the entity factory for the one and only game world
         getGameWorld().addEntityFactory(new Factory());
 
-        // run starts a thread in the bbackground to not let the gui hang between frames
+        // run starts a thread in the background to not let the gui hang between frames
         run(() -> {
             if (FXGLMath.random(0, 5) == 0) {
                 // todo disappear after few seconds
