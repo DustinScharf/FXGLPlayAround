@@ -65,6 +65,7 @@ public class GameApp extends GameApplication {
      * @param args launch arguments
      */
     public static void main(String[] args) {
-        launch(args); // launches the game app
+        // launches the game app
+        launch(args);
     }
 }
