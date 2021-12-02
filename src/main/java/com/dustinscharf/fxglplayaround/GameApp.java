@@ -32,6 +32,7 @@ public class GameApp extends GameApplication {
      */
     @Override
     protected void initInput() {
+        // if f ist pressed, a push notification is fired
         onKeyDown(KeyCode.F, () -> getNotificationService().pushNotification("Hello world!"));
     }
 
