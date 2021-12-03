@@ -36,6 +36,9 @@ public class GameApp extends GameApplication {
         onKeyDown(KeyCode.F, () -> getNotificationService().pushNotification("Hello world!"));
     }
 
+    /**
+     * Initializes the game (field)
+     */
     @Override
     protected void initGame() {
         // sets the entity factory for the one and only game world
