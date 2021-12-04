@@ -15,6 +15,9 @@ import static com.almasb.fxgl.dsl.FXGL.onKeyDown;
 import static com.almasb.fxgl.dsl.FXGL.run;
 import static com.almasb.fxgl.dsl.FXGL.spawn;
 
+/**
+ * The main game app
+ */
 public class GameApp extends GameApplication {
 
     /**
